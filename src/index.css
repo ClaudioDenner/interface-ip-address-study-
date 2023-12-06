@@ -1,0 +1,18 @@
+:root {
+    --veryDarkGray: hsl(0, 0%, 17%);
+    --DarkGray: hsl(0, 0%, 59%);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+  }
+
+.leaflet-container{
+    height: 100vh;
+    z-index: 1;
+}
+
+

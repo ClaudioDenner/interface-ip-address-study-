@@ -1,0 +1,140 @@
+.container{
+    max-width: 1440px;
+    width: 100%;
+    background-image: url('../../assets/images/pattern-bg-desktop.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 3;
+    padding-top: 75px;
+    
+    
+}
+
+.title{
+    color: white;
+    text-align: center;
+    margin: 20px 0px 5px 0px;
+}
+
+.container_input{
+    display: flex;
+    border-radius: 10px;
+    background-color: var(--DarkGray);
+    margin: 20px 0px;
+    width: 33%;
+    height: 50px;
+    
+    
+}
+
+.input{
+    width: 85%;
+    border: none;
+    height: 50px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+.input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.button{
+    background-color: var(--veryDarkGray);
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: var(--DarkGray);
+    border: none;
+}
+
+.container_infos{
+    display: flex;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    width: 70%;
+    margin: 10px;
+    z-index: 3;
+    padding: 20px ;
+    min-height: 150px;
+
+
+
+}
+
+.topic_info{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.title_topic_info{
+    color: var(--DarkGray);
+    font-size: 0.8rem;
+    width: 100%;
+    margin: 5px 0px;
+    
+}
+
+.value_topic_info{
+    color: var(--veryDarkGray);
+    margin: 5px 0px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        background-image: url('../../assets/images/pattern-bg-mobile.png');
+        max-height: 300px;
+        padding-top: 150px;
+
+        
+    }
+
+    .title{
+        margin-bottom: 0px;
+    }
+
+    .container_input{
+        width: 85%;
+    }
+
+    .container_infos{
+        flex-direction: column;
+        width: 85%;
+        justify-content: center;
+        padding: 10px 0px;
+        min-height: 250px;
+        
+    }
+    .topic_info{
+        display: block;
+        width: 100%;
+    }
+    .title_topic_info{
+        text-align: center;
+    }
+}
